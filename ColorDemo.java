@@ -47,8 +47,10 @@ public class ColorDemo {
 			                         { black, white, black, white } ,
 			                         { white, black, white, black } ,
 		                           };
+								   
+		int[][][] image = read("tinypic.ppm");
+		print(image); // prints the image data
 	}
-
     /**
 	 * Prints the RGB values of a given color, using the format "(rrr,ggg,bbb)". 
 	 * @param c - the given color
