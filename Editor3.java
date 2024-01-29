@@ -16,9 +16,11 @@ public class Editor3 {
 		String source = args[0];
 		String target = args[1];
 		int n = Integer.parseInt(args[2]);
+		//double alpha = Double.parseDouble(args[2]);
 		Color[][] sourceImage = Runigram.read(source);
 		Color[][] targetImage = Runigram.read(target);
 		Runigram.setCanvas(sourceImage);
 		Runigram.morph(sourceImage, targetImage, n);
+		//Runigram.blend(sourceImage, targetImage, alpha);
 	}
 }
